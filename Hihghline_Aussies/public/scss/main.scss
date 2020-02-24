@@ -1,0 +1,181 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#mainContainer {
+    background-color: #7088B5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    min-height: 100vh;
+    
+}
+#contentBox{
+    background: whitesmoke;
+    // height:100vh;
+    width: 1200px;
+    box-shadow: 0px 0px 20px #141414;
+    margin: 50px 0px 50px 0px;
+    height: fit-content;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+}
+.bannerText{
+    display: flex;
+    justify-content: center;
+    color:#7088b5;
+    h1{
+        margin: 25px 0px;
+        font-size: 8rem !important;
+    }
+}
+#homeImg, #aboutImage{
+    display: flex;
+    justify-content: center;
+}
+#bannerImg{
+    img{
+        max-width: 100%;
+        width: 1200px;
+        height: 410px;
+    }
+    // display: flex;
+    // max-width: 100%;
+    // max-height: 30vh;
+    // height: 30vh;
+    // background-image: url(../Images/Alli_Banner.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // // background-size: inherit;
+}
+#homeBio, #aboutUsText, .mainStyle{
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 220%;
+        display: block;
+        margin: 48px 160px;
+        text-align: justify;
+        color: #626569;
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: inherit;
+  }
+#navList{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    background: #869bbc;
+    list-style: none;
+    margin: 0;
+   
+    
+
+    .divideLine{
+        width: 1px;
+        height: 50%;
+        background: whitesmoke;
+        margin: auto;
+    }
+    li{
+        text-align: center;
+        background: #869bbc;
+        a{
+            color: whitesmoke;
+            font-family: 'EB Garamond', serif;
+        }
+        
+    }
+    li:hover{
+
+    }
+}
+#contactWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .contact{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+        .name{
+            p{
+                font-weight: bold;
+            }
+        }
+        p{
+            line-height: 100%;
+            margin: 2px 0px;
+            text-align: center;
+            font-size: 14px;
+            color: #7088b5;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    p{
+        font-size: 10px;
+    }
+}
+
+//our dogs
+
+.dogBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+
+    .dogDiv{
+        display: flex;
+        flex-direction: column;
+        width:400px;
+        height: auto;
+        image-rendering: crisp-edges;
+        margin: 5px;
+        img{
+            width: 400px;
+            height: 320px;
+            margin: 0px auto;
+        }
+        h3{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+.todo{
+    text-align: center;
+}
+
+//info
+
+.links{
+    display: flex;
+    justify-content: center;
+    
+    p{
+        text-align: center;
+    }
+}
