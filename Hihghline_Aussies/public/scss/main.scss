@@ -8,7 +8,7 @@
     display: table;
     clear: both;
   }
-#mainContainer {
+  #mainContainer {
     background-color: #7088B5;
     display: flex;
     justify-content: center;
@@ -37,7 +37,7 @@ h1{
         font-size: 8rem !important;
     }
 }
-#homeImg, #aboutImage{
+#homeImg, #aboutImage, #contactImage{
     display: flex;
     justify-content: center;
 }
@@ -81,6 +81,7 @@ h1{
     background: #869bbc;
     list-style: none;
     margin: 0;
+    z-index: 10000;
    
     
 
@@ -97,10 +98,24 @@ h1{
             color: whitesmoke;
             font-family: 'EB Garamond', serif;
         }
+        a:hover{
+        cursor:  url("/public/public/images/pawinv.png")0 0, auto;
         
+        
+        }
     }
-    li:hover{
-
+    
+}
+.dropMenu{
+    .menu{
+        a{
+            margin: auto;
+        }
+        li:not(:last-child) {
+            border-bottom: solid 1px ghostwhite;
+        
+        
+        }
     }
 }
 #contactWrapper{
@@ -159,6 +174,9 @@ h1{
             height: 320px;
             margin: 0px auto;
         }
+        img:hover{
+            cursor: pointer;
+        }
         h3{
             font-size: 15px;
             text-align: center;
@@ -169,6 +187,144 @@ h1{
     text-align: center;
 }
 
+.soloDogPage{
+
+
+    .dogMainImg{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 60%;
+        }
+    }
+    .dogTitle{
+        h3{
+            font-size: 21px;
+            text-align: center;
+        }
+    }
+    .sireDamDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .sireDamElement{
+            width: 30%;
+            text-align: center;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .dogText{
+        h3, h4{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 220%;
+            display: block;
+            margin: 48px 160px;
+            text-align: justify;
+            color: #626569; 
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color:#7088b5;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+    }
+    .lineTop{
+        border-top:1px rgb(85, 85, 85)  solid ;
+        h1{
+            padding-top: 60px;
+        }
+    }
+    .dogText2{
+        padding-top: 60px;
+    }
+    .offspringBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        
+        .offspringElement{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .offspringSire{
+            width: 30%;
+            text-align: center;
+            // color: red;
+            margin:0px;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+                margin: auto;
+                text-align: center;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        .offspring{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            .pupper{
+                width: 27%;
+                h3{
+                    font-size: 12px;
+                    margin: auto;
+                    text-align: center;
+                }
+                
+                img{
+                    
+                }
+            }
+        }
+    }
+    
+}
+.lineBottom{
+    
+    width: 40%;
+    height: 1px;
+    padding-bottom: 40px;
+    border-bottom:1px #7088b5 solid;
+    margin: auto;
+}
+#offSpringFlex{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px;
+        #offspringLine{
+            width: 40%;
+            border-bottom:1px #7088b5 solid;
+            h1{
+                margin: 0px;
+            }
+        }
+    }
 //info
 
 .links{
@@ -178,4 +334,11 @@ h1{
     p{
         text-align: center;
     }
+}
+
+//gallery
+
+.orbit{
+    margin: 30px;
+
 }

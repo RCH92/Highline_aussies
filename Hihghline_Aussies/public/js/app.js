@@ -21,3 +21,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+$(".dogBox").on("click", "img", function(){
+  document.location.href = $(this).data("links");
+  console.log($(this).data("links"));
+});
