@@ -38,6 +38,7 @@ function serve() {
 
   gulp.watch("public/scss/*.scss", sass);
   gulp.watch("views/*.ejs").on('change', browserSync.reload);
+  gulp.watch("views/partials/*.ejs").on('change', browserSync.reload);
   gulp.watch("public/js/*.js").on('change', browserSync.reload);
 }
 

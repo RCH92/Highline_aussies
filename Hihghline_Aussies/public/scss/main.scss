@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     height: auto;
-    width: 100vw;
+    
     min-height: 100vh;
     
 }
@@ -56,6 +56,19 @@ h1{
     // background-size: cover;
     // // background-size: inherit;
 }
+.imgBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img{
+        max-width: 100%;
+        width: 60%;
+        height: auto;
+    }
+}
+.secondImg{
+    
+}
 #homeBio, #aboutUsText, .mainStyle{
     p{
         font-family: 'Open Sans', sans-serif;
@@ -68,22 +81,29 @@ h1{
     }
 }
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: inherit;
+    z-index: 9999;
   }
 #navList{
     display: flex;
     justify-content: space-around;
     height: auto;
-    padding: 5px;
+    padding: 6px 3px;
     text-align: center;
     background: #869bbc;
     list-style: none;
     margin: 0;
     z-index: 10000;
+
    
-    
+    .divideLI{
+        margin: 1px;
+        min-width: 1px;
+    //     background: whitesmoke;
+    color: #869bbc;
+    }
 
     .divideLine{
         width: 1px;
@@ -183,18 +203,35 @@ h1{
         }
     }
 }
+// bred by
+.bredBy .dogDiv{
+    img{
+        width: 400px;
+        height: 400px;
+        margin: 0px auto;
+    }
+}
 .todo{
     text-align: center;
 }
 
 .soloDogPage{
 
-
+    .bottomPad{
+        padding-bottom: 40px;
+    }
     .dogMainImg{
         display: flex;
         justify-content: center;
         img{
             width: 60%;
+        }
+    }
+    .dogSecondaryImg{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 50%;
         }
     }
     .dogTitle{
@@ -207,6 +244,7 @@ h1{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        margin: 40px 0px;
 
         .sireDamElement{
             width: 30%;
@@ -305,6 +343,10 @@ h1{
     }
     
 }
+.emmiTuckerImg{
+    height: 75%;
+    width: auto;
+}
 .lineBottom{
     
     width: 40%;
@@ -341,4 +383,38 @@ h1{
 .orbit{
     margin: 30px;
 
+}
+
+//slick
+.slider-for{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+// .slick-prev{
+//       color: #7088b5 !important ; 
+//     }
+.sliderNavBox{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    padding: 20px;
+    
+}
+.slider-nav{
+    padding: 10px;
+    margin: auto;
+    
+    
+    button::before{
+        color: #7088b5
+    }
+    // box-shadow: 0px 0px 20px #141414;
+    
+    // border: 1px #7088b5 solid;
+    img{
+        padding: 5px 10px;
+        // width: 30%;
+        
+    }
 }
