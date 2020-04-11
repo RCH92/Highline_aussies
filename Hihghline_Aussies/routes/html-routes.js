@@ -7,11 +7,12 @@ router.get('/ourdogs', (req, res) => res.render('ourdogs.ejs'));
 router.get('/litters', (req, res) => res.render('litters.ejs'));
 router.get('/bredby', (req, res) => res.render('bred_by.ejs')); //add this
 router.get('/bredby/deacon', (req, res) => res.render('deacon.ejs'));
-// router.get('/bredby/nike', (req, res) => res.render('nike.ejs'));
-// router.get('/bredby', (req, res) => res.render('bred_by.ejs'));
-// router.get('/bredby', (req, res) => res.render('bred_by.ejs'));
-// router.get('/bredby', (req, res) => res.render('bred_by.ejs'));
-// router.get('/bredby', (req, res) => res.render('bred_by.ejs'));
+router.get('/bredby/nike', (req, res) => res.render('nike.ejs'));
+router.get('/bredby/parker', (req, res) => res.render('parker.ejs'));
+router.get('/bredby/taylor', (req, res) => res.render('taylor.ejs'));
+router.get('/bredby/bacio', (req, res) => res.render('bacio.ejs'));
+router.get('/bredby/wyatt', (req, res) => res.render('wyatt.ejs'));
+router.get('/bredby/stout', (req, res) => res.render('stout.ejs'));
 
 router.get('/gallery', (req, res) => res.render('gallery.ejs'));
 router.get('/info', (req, res) => res.render('info.ejs'));

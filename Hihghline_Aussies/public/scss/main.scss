@@ -124,6 +124,9 @@ h1{
         
         }
     }
+    li:hover{
+        cursor:  url("/public/public/images/pawinv.png")0 0, auto;
+    }
     
 }
 .dropMenu{
@@ -390,6 +393,12 @@ h1{
     width: 60%;
     margin: auto;
     margin-bottom: 40px;
+    img{
+        max-height: 550px;
+        // height: 600px;
+        width: auto;
+        margin: auto;
+    }
 }
 // .slick-prev{
 //       color: #7088b5 !important ; 
@@ -414,6 +423,8 @@ h1{
     // border: 1px #7088b5 solid;
     img{
         padding: 5px 10px;
+        max-height: 200px;
+        margin: auto;
         // width: 30%;
         
     }
