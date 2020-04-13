@@ -3,7 +3,7 @@
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-.clearfix:after {
+.clearfix{
     content: "";
     display: table;
     clear: both;
@@ -36,6 +36,11 @@ h1{
         margin: 25px 0px;
         font-size: 8rem !important;
     }
+}
+.center{
+    margin: auto;
+    margin-top: -25px;
+    text-align: center;
 }
 #homeImg, #aboutImage, #contactImage{
     display: flex;
@@ -79,7 +84,17 @@ h1{
         text-align: justify;
         color: #626569;
     }
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 22px;
+        line-height: 220%;
+        display: block;
+        margin: 48px 160px;
+        text-align: center;
+        color: black;
+    }
 }
+
 .sticky {
     position: sticky;
     top: 0;
@@ -176,7 +191,34 @@ h1{
         font-size: 10px;
     }
 }
+//alert
 
+.alert {
+    position: relative;
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+    text-align: center;
+    
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
 //our dogs
 
 .dogBox{
@@ -218,6 +260,33 @@ h1{
     text-align: center;
 }
 
+.sireDamDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 40px 0px;
+
+        .sireDamElement{
+            width: 30%;
+            text-align: center;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .fixedSize{
+        img{
+            height: 350px;
+        }
+    }
 .soloDogPage{
 
     .bottomPad{
@@ -243,28 +312,7 @@ h1{
             text-align: center;
         }
     }
-    .sireDamDiv{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 40px 0px;
-
-        .sireDamElement{
-            width: 30%;
-            text-align: center;
-            h1{
-                font-size: 35px;
-                color:#7088b5;
-            }
-            h3{
-                font-size: 17px;
-            }
-            h4{
-                font-size: 14px;
-            }
-        }
-        
-    }
+    
     .dogText{
         h3, h4{
             font-family: 'Open Sans', sans-serif;
@@ -344,7 +392,9 @@ h1{
             }
         }
     }
-    
+    .bredByDog{
+        margin-top: -30px;
+    }
 }
 .emmiTuckerImg{
     height: 75%;
@@ -389,6 +439,21 @@ h1{
 }
 
 //slick
+// .slider1{
+    
+//         width: 60%;
+//         margin: auto;
+//         margin-bottom: 40px;
+//         img{
+//             max-height: 550px;
+//             // height: 600px;
+//             width: auto;
+//             margin: auto;
+//         }
+//         button::before{
+//             color: #7088b5
+//         }
+// }
 .slider-for{
     width: 60%;
     margin: auto;

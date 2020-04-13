@@ -13,6 +13,7 @@ $(document).ready(function () {
         adaptiveHeight: false,
         // variableWidth: true,
         zindex: 1
+        // infinite: true
     });
     $('.slider-nav').slick({
         slidesToShow: 5,

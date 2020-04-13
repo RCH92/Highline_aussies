@@ -14,7 +14,6 @@ module.exports = function(app){
             break;
             case 'dela':
                 folderPath += 'dela/dela_slider';
-                console.log(folderPath);
             break;
             case 'shimmer':
                 folderPath += 'shimmer/shimmer_slider';
@@ -22,6 +21,35 @@ module.exports = function(app){
             case 'lulu':
                 folderPath += 'lulu/lulu_slider';
             break;
+            case 'deacon':
+                folderPath += 'bred_by/deacon/deacon_slider';
+                break;
+            case 'stout':
+                folderPath += 'bred_by/stout/stout_slider';
+            break;
+            case 'wyatt':
+                folderPath += 'bred_by/wyatt/wyatt_slider';
+            break;
+            case 'nike':
+                folderPath += 'bred_by/nike/nike_slider';
+            break;
+            case 'bacio':
+                folderPath += 'bred_by/bacio/bacio_slider';
+            break;
+            case 'bogart':
+                folderPath += 'bred_by/bogart/bogart_slider';
+            break;
+            case 'taylor':
+                folderPath += 'bred_by/taylor/taylor_slider';
+            break;
+            case 'parker':
+                folderPath += 'bred_by/parker/parker_slider';
+            break;
+            case 'layla':
+                folderPath += 'bred_by/layla/layla_slider';
+            break;
+
+            
 
         }
         makeJson(folderPath);

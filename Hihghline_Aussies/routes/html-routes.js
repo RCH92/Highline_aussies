@@ -13,7 +13,8 @@ router.get('/bredby/taylor', (req, res) => res.render('taylor.ejs'));
 router.get('/bredby/bacio', (req, res) => res.render('bacio.ejs'));
 router.get('/bredby/wyatt', (req, res) => res.render('wyatt.ejs'));
 router.get('/bredby/stout', (req, res) => res.render('stout.ejs'));
-
+router.get('/bredby/bogart', (req, res) => res.render('bogart.ejs'));
+router.get('/bredby/layla', (req, res) => res.render('layla.ejs'));
 router.get('/gallery', (req, res) => res.render('gallery.ejs'));
 router.get('/info', (req, res) => res.render('info.ejs'));
 router.get('/contact', (req, res) => res.render('contact.ejs'));
